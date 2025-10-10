@@ -97,15 +97,15 @@ If I had fully executed these tests, here's what I would expect:
 
 ---
 
-## 🧪 Testing Approach
+## Testing Approach
 
 ### Philosophy
 I approached this with a **risk-based, practical mindset**:
-- ✅ Prioritize ruthlessly - Focus on what matters most
-- ✅ Think like a user - Test real-world scenarios
-- ✅ Consider business impact - Link testing to value
-- ✅ Be pragmatic - Balance thoroughness with time constraints
-- ✅ Communicate clearly - Make findings accessible to all stakeholders
+-  Prioritize ruthlessly - Focus on what matters most
+-  Think like a user - Test real-world scenarios
+-  Consider business impact - Link testing to value
+-  Be pragmatic - Balance thoroughness with time constraints
+-  Communicate clearly - Make findings accessible to all stakeholders
 
 ### Testing Methods
 
@@ -189,7 +189,7 @@ Postman collection covering:
 
 ---
 
-## 🔄 How to Reproduce My Tests
+##  How to Reproduce My Tests
 
 ### Prerequisites
 ```bash
@@ -274,7 +274,7 @@ npm test -- --coverage
 
 ---
 
-## 📈 Test Coverage Analysis
+## Test Coverage Analysis
 
 | Area | Coverage | Status |
 |------|----------|--------|
@@ -334,13 +334,6 @@ npm test -- --coverage
 ## Acknowledgments
 
 Thank you for the opportunity to demonstrate my QA skills through this assessment. I've approached this as a real-world challenge, balancing thoroughness with practical constraints.
-
-**What this assessment demonstrates:**
-- ✅ Strategic, risk-based thinking
-- ✅ Technical depth in testing methodologies
-- ✅ Practical approach to time-constrained projects
-- ✅ Clear communication for diverse audiences
-- ✅ Focus on quality and user experience
 
 I'm excited to discuss this further during the interview and answer any questions about my approach, the challenges I considered, and how I would adapt this in your specific environment.
 
