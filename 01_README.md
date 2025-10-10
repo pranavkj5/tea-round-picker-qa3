@@ -1,9 +1,7 @@
 # Tea Round Picker - QA Test Assessment
 
 **Prepared by:** Pranav  
-**Date:** October 10, 2025  
-**For:** Bristol Office Technical Interview  
-**Submission Deadline:** Monday, October 13, 2025 by 5:00 PM
+
 
 ---
 
