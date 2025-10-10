@@ -1,8 +1,4 @@
-# Bug Report Template
 
-Use this template to document any bugs found during testing.
-
----
 
 ## Bug Report
 
@@ -37,11 +33,11 @@ Use this template to document any bugs found during testing.
 
 ### Environment
 
-**Browser:** [e.g., Chrome 118.0.5993.88]  
-**Operating System:** [e.g., macOS 14.0 / Windows 11 / Ubuntu 22.04]  
-**Build/Version:** [e.g., v1.2.3]  
-**Date Found:** [YYYY-MM-DD]  
-**Tester:** [Your name]
+**Browser:** []  
+**Operating System:** []  
+**Build/Version:** []  
+**Date Found:** []  
+**Tester:** []
 
 ---
 
@@ -145,27 +141,25 @@ Examples:
 
 ### Suggested Fix
 
-[Your recommendation for how to fix this bug]
+[Your recommendation ]
 
 ---
 
 ### Related Information
 
-**Related Test Case:** [e.g., TS2-TC4]  
-**Related Bugs:** [e.g., TB-005, TB-012]  
+**Related Test Case:** []  
+**Related Bugs:** []  
 **Duplicate of:** [Bug ID if this is a duplicate]
 
 ---
 
 ### Developer Notes
 
-[Space for developers to add notes about the fix]
+
 
 ---
 
 ### Verification Notes
-
-[Space for QA to add notes when verifying the fix]
 
 **Verified By:** ___________  
 **Verification Date:** ___________  
@@ -245,14 +239,11 @@ Round auto-cancelled at T=24:58 (10:24:58 AM). Cancellation occurred 2 seconds e
 
 **Console Errors:**
 ```javascript
-[10:24:58.142] Round auto-cancelled: round_abc123
-[10:24:58.156] Notification sent to 5 participants
-```
+
 
 **Expected console output:**
 ```javascript
-[10:25:00.000] Round auto-cancelled: round_abc123
-```
+
 
 **Video Recording:**
 - screencast-timing-bug.mp4 (uploaded to bug-reports folder)
