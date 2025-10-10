@@ -9,35 +9,30 @@
 
 This document outlines a focused, practical testing approach for The Tea Round Picker application. Given real-world time constraints, I've prioritized testing the highest-risk areas that directly impact user experience and business value.
 
-**Key Focus Areas:**
+Key Focus Areas:
 - Critical user journeys (both Round Initiator and Team Members)
 - Timing mechanisms (the core business logic)
 - Random selection fairness
 - Authentication security
 - Data integrity
 
-**Testing Approach:** Mix of manual exploratory testing for user journeys and automated testing for regression and timing-critical features.
+**Testing Approach:** 
+Mix of manual exploratory testing for user journeys and automated testing for regression and timing-critical features.
 
 ---
 
 ## 1. Testing Scope
 
 ### What I'm Testing (In Scope)
-✅ Complete Round Initiator and Team Member user journeys  
-✅ Timing windows (15-min participation, 10-min initiation deadline)  
-✅ Random selection algorithm fairness  
-✅ SSO authentication and authorization  
-✅ Data persistence and history features  
-✅ Core API endpoints  
-✅ Basic security (XSS, CSRF, SQL injection)  
-✅ Critical cross-browser compatibility (Chrome, Firefox, Safari)
+Complete Round Initiator and Team Member user journeys  
+Timing windows (15-min participation, 10-min initiation deadline)  
+Random selection algorithm fairness  
+SSO authentication and authorization  
+Data persistence and history features  
+Core API endpoints  
+Basic security (XSS, CSRF, SQL injection)  
+Critical cross-browser compatibility (Chrome, Firefox, Safari)
 
-### What I'm Not Testing (Out of Scope for This Assessment)
-❌ Performance/load testing at scale  
-❌ Full penetration testing  
-❌ Accessibility compliance (WCAG)  
-❌ Mobile native apps  
-❌ Internationalization
 
 ---
 
@@ -54,11 +49,11 @@ This document outlines a focused, practical testing approach for The Tea Round P
 | **Cross-browser** | Manual | MEDIUM | User compatibility |
 
 ### Tools I'd Use
-- **Test Management:** Excel/Google Sheets (simple, shareable)
+- **Test Management:** Excel
 - **API Testing:** Postman + Newman (for CI automation)
 - **UI Automation:** Playwright (modern, reliable)
-- **Security:** OWASP ZAP, manual review
-- **Bug Tracking:** Jira or similar
+- **Security:**  manual review
+- **Bug Tracking:** Jira
 - **CI Integration:** GitHub Actions
 
 ---
