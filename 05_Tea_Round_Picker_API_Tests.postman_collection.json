@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "Tea Round Picker API Tests",
+    "_postman_id": "12345-abcdef",
+    "description": "API test collection for Tea Round Picker application",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Round",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"initiatorId\": \"user123\",\n  \"invitedMembers\": [\"user456\",\"user789\"]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/rounds",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api","rounds"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Round Details",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/rounds/abc123",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api","rounds","abc123"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
