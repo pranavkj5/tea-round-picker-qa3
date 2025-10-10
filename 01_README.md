@@ -24,7 +24,7 @@ tea-round-picker-qa-assessment-pranav/
 
 ---
 
-## 🎯 Executive Summary
+##Executive Summary
 
 I've developed a **focused, risk-based testing strategy** for The Tea Round Picker application, concentrating on **5 critical test scenarios** that cover the highest-risk areas:
 
@@ -45,11 +45,10 @@ These scenarios represent approximately **80% of the risk** with **20% of the te
 
 ---
 
-## 🚀 Quick Start Guide
 
 ### For Reviewers
 
-**Read this first:** `Test_Strategy_Plan.md` (20-30 minutes)
+**Read this first:** `Test_Strategy_Plan.md` 
 - Contains complete testing approach, all 5 scenarios in detail, risk assessment, and test results
 
 **Then explore:**
@@ -64,7 +63,7 @@ See the **"How to Reproduce My Tests"** section in `Test_Strategy_Plan.md` for c
 
 ---
 
-## 📊 Key Findings Summary
+## Key Findings Summary
 
 If I had fully executed these tests, here's what I would expect:
 
@@ -120,18 +119,18 @@ I approached this with a **risk-based, practical mindset**:
 | **Cross-browser** | Manual | MEDIUM | User compatibility |
 
 ### Tools Used
-- **Test Management:** Excel/Google Sheets
-- **API Testing:** Postman + Newman (for CI automation)
-- **UI Automation:** Playwright (recommended)
+- **Test Management:** Excel
+- **API Testing:** Postman
+- **UI Automation:** Playwright 
 - **Security:** OWASP ZAP, manual testing
 - **Statistical Analysis:** Custom scripts for fairness validation
 
 ---
 
-## 📖 Document Descriptions
+## Document Descriptions
 
 ### Test_Strategy_Plan.md (Main Document)
-**~8,000 words | Read time: 20-30 minutes**
+**~8,000 words | Read time: 20-30 minutes*
 
 Complete test strategy including:
 - Testing scope and objectives
@@ -187,13 +186,6 @@ Postman collection covering:
 ### Presentation_Guide.md
 **Interview preparation**
 
-Contains:
-- 10-15 minute presentation structure
-- Key points to emphasize
-- Anticipated questions with suggested answers
-- What to avoid
-- Questions to ask them
-- Pre-interview checklist
 
 ---
 
@@ -295,7 +287,7 @@ npm test -- --coverage
 
 ---
 
-## 🎯 Risk Assessment
+## Risk Assessment
 
 ### Highest Risk Areas
 
@@ -309,7 +301,7 @@ npm test -- --coverage
 
 ---
 
-## 💡 Key Recommendations
+## Key Recommendations
 
 ### Before Production Release
 
@@ -338,34 +330,8 @@ npm test -- --coverage
 
 ---
 
-## 🎤 For the Interview
 
-### What I'll Emphasize
-
-1. **Strategic Thinking:** Risk-based prioritization over comprehensive coverage
-2. **Technical Depth:** API testing, security awareness, statistical analysis
-3. **Practical Approach:** Real-world constraints, reproducible methods
-4. **Business Awareness:** User trust, adoption, business impact
-5. **Communication:** Clear docs for technical and non-technical audiences
-
-### Questions I'll Ask
-
-1. "What's your current QA process and testing maturity?"
-2. "What are the biggest quality challenges you're facing?"
-3. "How do QA and Development teams collaborate here?"
-4. "What does success look like for this role in 3-6 months?"
-
----
-
-## 📞 Contact Information
-
-**Name:** Pranav  
-**Submission Date:** October 10, 2025  
-**Interview Location:** Bristol Office
-
----
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Thank you for the opportunity to demonstrate my QA skills through this assessment. I've approached this as a real-world challenge, balancing thoroughness with practical constraints.
 
@@ -378,25 +344,3 @@ Thank you for the opportunity to demonstrate my QA skills through this assessmen
 
 I'm excited to discuss this further during the interview and answer any questions about my approach, the challenges I considered, and how I would adapt this in your specific environment.
 
----
-
-## ✅ Submission Checklist
-
-Before submitting, I verified:
-
-- [x] All 6 files included
-- [x] README explains contents clearly
-- [x] Test Strategy is complete and detailed
-- [x] Test Execution Tracker is ready to use
-- [x] Bug Report Template includes example
-- [x] Postman collection is valid JSON
-- [x] Presentation guidance included
-- [x] All files properly named
-- [x] Documentation is professional and clear
-- [x] Reproducibility steps are detailed
-
----
-
-**Ready for review and interview discussion!**
-
-*This assessment demonstrates a practical, risk-based approach to QA that prioritizes high-impact testing within real-world constraints. I look forward to presenting my methodology and discussing how it aligns with your team's needs.*
