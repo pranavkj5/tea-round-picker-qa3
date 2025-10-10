@@ -244,10 +244,10 @@ Body: {
 }
 
 Test Cases:
-✓ Valid request → 201 Created
-✓ Missing initiatorId → 400 Bad Request
-✓ Duplicate active round → 409 Conflict
-✓ Unauthorized user → 401 Unauthorized
+Valid request → 201 Created
+Missing initiatorId → 400 Bad Request
+Duplicate active round → 409 Conflict
+Unauthorized user → 401 Unauthorized
 ```
 
 **2. Join Round**
@@ -259,10 +259,10 @@ Body: {
 }
 
 Test Cases:
-✓ Within 15-min window → 200 OK
-✓ After 15 minutes → 400 Bad Request
-✓ Already joined → 200 OK (idempotent)
-✓ Invalid round ID → 404 Not Found
+Within 15-min window → 200 OK
+After 15 minutes → 400 Bad Request
+Already joined → 200 OK (idempotent)
+Invalid round ID → 404 Not Found
 ```
 
 **3. Trigger Selection**
@@ -270,11 +270,11 @@ Test Cases:
 POST /api/rounds/{id}/choose
 
 Test Cases:
-✓ Valid request by initiator → 200 OK + selected user ID
-✓ Before 15 minutes → 400 Bad Request
-✓ After 25 minutes → 400 Bad Request (expired)
-✓ Non-initiator attempts → 403 Forbidden
-✓ Zero participants → 400 Bad Request
+Valid request by initiator → 200 OK + selected user ID
+Before 15 minutes → 400 Bad Request
+After 25 minutes → 400 Bad Request (expired)
+Non-initiator attempts → 403 Forbidden
+Zero participants → 400 Bad Request
 ```
 
 **4. Get History**
@@ -282,10 +282,10 @@ Test Cases:
 GET /api/rounds/history
 
 Test Cases:
-✓ Returns user's round history
-✓ Pagination works correctly
-✓ Filters by date range
-✓ Unauthorized → 401
+Returns user's round history
+Pagination works correctly
+Filters by date range
+Unauthorized → 401
 ```
 
 ### Postman Collection
@@ -302,11 +302,11 @@ I would create a Postman collection with:
 ### Phase 1: Smoke Testing (2 hours)
 **Goal:** Verify app is testable
 
-- Can login via SSO ✓
-- Can create a round ✓
-- Can accept invitation ✓
-- Can trigger selection ✓
-- Can view history ✓
+- Can login via SSO 
+- Can create a round 
+- Can accept invitation 
+- Can trigger selection 
+- Can view history 
 
 **Exit Criteria:** All smoke tests pass, no blockers
 
