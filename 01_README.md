@@ -7,7 +7,7 @@
 
 ---
 
-## 📦 Contents of This Submission
+## Contents of This Submission
 
 This submission contains my complete QA assessment for The Tea Round Picker application:
 
