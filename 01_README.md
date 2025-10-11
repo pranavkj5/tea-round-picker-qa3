@@ -10,14 +10,36 @@
 This submission contains my complete QA assessment for The Tea Round Picker application:
 
 ```
+# ☕ Tea Round Picker QA - Playwright Test Suite
+
+This repository contains the **QA and automation testing project** for the **Tea Round Picker** application.  
+It demonstrates end-to-end testing using **Playwright with JavaScript**, simulating the Round Initiator and Team Member journeys.
+
+---
+
+## Test Automation Overview
+
+**Tool:** [Playwright](https://playwright.dev)  
+**Language:** JavaScript (Node.js)  
+**Browsers Tested:** Chromium, Firefox, WebKit  
+**Mock Server:** [WireMock](https://wiremock.org/) used for simulating backend APIs  
+
+---
+
+## Folder Structure
 tea-round-picker-qa-assessment-pranav/
 │
-├── README.md (this file)
-├── Test_Strategy_Plan.md (Main test strategy document)
-├── Test_Execution_Tracker.csv (Test case tracking spreadsheet)
-├── Bug_Report_Template.md (Standardized bug reporting format)
-├── Tea_Round_Picker_API_Tests.postman_collection.json (Postman API tests)
-
+├── README.md # Project overview
+├── Test_Strategy_Plan.md # Test strategy and scope
+├── Test_Execution_Tracker.csv # Manual test tracking
+├── Bug_Report_Template.md # Standardized bug report format
+├── Tea_Round_Picker_API_Tests.postman_collection.json # Postman tests
+└── playwright-tests/ #  Folder containing Playwright tests
+├── tests/
+│ └── mytest.spec.js
+├── playwright.config.js
+├── package.json
+└── .gitignore
 ```
 
 ---
