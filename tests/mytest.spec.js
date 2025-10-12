@@ -5,11 +5,11 @@ const BASE_URL = 'http://localhost:3000';
 
 // ✅ Reusable login function
 async function login(page, email, password = 'test123') {
-  await page.goto(`${BASE_URL}/login`);
+  await page.goto(`{BASE_URL}/login`);
   await page.fill('#email', email);
   await page.fill('#password', password);
   await page.click('button[type="submit"]');
-  await expect(page).toHaveURL(`${BASE_URL}/dashboard`);
+  await expect(page).toHaveURL(`{BASE_URL}/dashboard`);
 }
 
 // ✅ Group all tests for Tea Round Picker
