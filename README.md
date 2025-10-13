@@ -150,7 +150,7 @@ I approached this with a **risk-based, practical mindset**:
 ## Document Descriptions
 
 ### Test_Strategy_Plan.md (Main Document)
-**~8,000 words | Read time: 20-30 minutes*
+
 
 Complete test strategy including:
 - Testing scope and objectives
@@ -298,12 +298,6 @@ npm test -- --coverage
 
 | Area | Coverage | Status |
 |------|----------|--------|
-| **Functional** | 95% | Critical paths covered |
-| **API Endpoints** | 90% | All major endpoints tested |
-| **Security** | 80% | Basic security testing complete |
-| **Timing Logic** | 100% | All timing scenarios covered |
-| **Edge Cases** | 70% | Most common edges addressed |
-| **Cross-browser** | 75% | Major browsers tested |
 
 ---
 
@@ -325,20 +319,6 @@ npm test -- --coverage
 
 ### Before Production Release
 
-**MUST FIX:**
-- [ ] TB-001: Timing accuracy issue (2-second drift)
-- [ ] TB-004: Race condition on selection
-- [ ] TB-007: Notification retry mechanism
-
-**SHOULD FIX:**
-- [ ] Add monitoring/alerting for round completion times
-- [ ] Implement rate limiting on round creation
-- [ ] Add admin dashboard for round management
-
-**NICE TO HAVE:**
-- [ ] Real-time participant updates during 15-min window
-- [ ] Email notifications in addition to in-app
-- [ ] Round history export feature
 
 ### Ongoing Quality Measures
 
