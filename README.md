@@ -10,7 +10,7 @@
 This submission contains my complete QA assessment for The Tea Round Picker application:
 
 ```
-# ☕ Tea Round Picker QA - Playwright Test Suite
+# Tea Round Picker QA - Playwright Test Suite
 
 This repository contains the **QA and automation testing project** for the **Tea Round Picker** application.  
 It demonstrates end-to-end testing using **Playwright with JavaScript**, simulating the Round Initiator and Team Member journeys.
