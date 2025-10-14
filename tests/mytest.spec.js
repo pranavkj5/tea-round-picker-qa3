@@ -28,7 +28,7 @@ test.describe('Tea Round Picker E2E Tests', () => {
     await page.click('button#send-invitations');
     await expect(page.locator('.notification')).toContainText('Invitations sent successfully');
 
-    // Mock 15 minutes wait (if your app supports this mock)
+    // Mock 15 minutes wait 
     await page.evaluate(() => window.mockTimer?.(15 * 60 * 1000));
 
     await page.click('button#refresh-participants');
