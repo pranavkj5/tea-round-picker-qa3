@@ -158,9 +158,6 @@ Chi-square test: p-value > 0.05 indicates randomness
 - Cannot join rounds without authentication
 
 **4c. Security Vulnerabilities**
-- Test for XSS: Enter `<script>alert('xss')</script>` as username
-- Test for SQL injection: Try malicious round ID in API
-- Test for CSRF: Submit round creation from external site
 - Test JWT manipulation: Modify token, should be rejected
 
 **Expected Results:**
