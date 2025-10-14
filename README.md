@@ -51,12 +51,12 @@ I've developed a **focused, risk-based testing strategy** for The Tea Round Pick
 1. **Complete Happy Path** - Core user journey from start to finish
 2. **Auto-Cancel Timing Logic** - Business-critical timing mechanisms (15-min window, 10-min deadline)
 3. **Fairness of Random Selection** - Statistical validation to ensure unbiased tea-maker selection
-4. **Authentication & Security** - SSO integration, XSS, CSRF, SQL injection testing
+4. **Authentication & Security** 
 5. **Edge Cases & Error Handling** - Zero participants, late joiners, concurrent operations
 
 ### Why These 5 Scenarios?
 
-These scenarios represent approximately **80% of the risk** with **20% of the testing effort** - a practical approach given real-world time constraints. They cover:
+They cover:
 - Core functionality that must work for the app to have any value
 - Business-critical logic (timing) that affects user trust
 - Algorithm fairness that impacts adoption
@@ -72,10 +72,10 @@ These scenarios represent approximately **80% of the risk** with **20% of the te
 - Contains complete testing approach, all 5 scenarios in detail, risk assessment, and test results
 
 **Then explore:**
-- `Test_Execution_Tracker.csv` - See the 50 test cases organized by scenario
-- `Bug_Report_Template.md` - Example bug report showing my documentation standards
+- `Test_Execution_Tracker.csv` 
+- `Bug_Report_Template.md` 
 - `Tea_Round_Picker_API_Tests.postman_collection.json` - Import into Postman to run API tests
-- `Presentation_Guide.md` - My preparation notes for the interview
+- `Presentation_Guide.md` 
 
 ### For Running Tests
 
@@ -87,45 +87,9 @@ See the **"How to Reproduce My Tests"** section in `Test_Strategy_Plan.md` for c
 
 If I had fully executed these tests, here's what I would expect:
 
-### Test Metrics
-| Metric | Result |
-|--------|--------|
-| Total Critical Test Scenarios | 5 |
-| Test Scenarios Passed | 4 |
-| Test Scenarios Failed | 1 |
-| **Pass Rate** | **80%** |
-| Bugs Found | 3 HIGH, 5 MEDIUM, 2 LOW |
-| Blockers | 0 |
 
-### Critical Issues Identified
-1. **TB-001 [HIGH]:** Auto-cancel timing inaccuracy (~2 seconds early)
-   - Impact: Reduces user decision time, affects trust
-   - Recommendation: Move to server-side scheduling
 
-2. **TB-004 [HIGH]:** Race condition when multiple users click "Choose" simultaneously
-   - Impact: Can result in multiple tea-makers selected
-   - Recommendation: Implement database locking
 
-3. **TB-007 [HIGH]:** No notification retry if user's SSO session expired
-   - Impact: Selected tea-maker may not know they were chosen
-   - Recommendation: Add notification queue with retry mechanism
-
-### Recommendation: **CONDITIONAL GO**
-- Core functionality works well (80% pass rate)
-- Fix 3 HIGH bugs before production release
-- No CRITICAL blockers preventing release after fixes
-
----
-
-## Testing Approach
-
-### Philosophy
-I approached this with a **risk-based, practical mindset**:
--  Prioritize ruthlessly - Focus on what matters most
--  Think like a user - Test real-world scenarios
--  Consider business impact - Link testing to value
--  Be pragmatic - Balance thoroughness with time constraints
--  Communicate clearly - Make findings accessible to all stakeholders
 
 ### Testing Methods
 
@@ -164,32 +128,11 @@ Complete test strategy including:
 - Presentation tips
 
 ### Test_Execution_Tracker.csv
-**50 test cases**
-
-Spreadsheet for tracking test execution with columns for:
-- Test ID and scenario mapping
-- Test case descriptions
-- Priority levels
-- Execution status
-- Browser/environment
-- Pass/Fail results
-- Bug IDs
 
 ### Bug_Report_Template.md
-**Standardized template + example**
-
-Includes:
-- Classification (severity, priority, status)
-- Environment details
-- Reproduction steps
-- Expected vs actual results
-- Evidence sections
-- Impact assessment
-- Complete example: Bug TB-001 (timing inaccuracy)
+Jira
 
 ### Tea_Round_Picker_API_Tests.postman_collection.json
-**20+ automated API tests**
-
 Postman collection covering:
 - Authentication endpoints (login, invalid credentials)
 - Round management (create, retrieve, validation)
@@ -202,12 +145,6 @@ Postman collection covering:
 2. Set `base_url` variable
 3. Run collection
 4. Or use Newman for CI: `newman run Tea_Round_Picker_API_Tests.postman_collection.json`
-
-### Presentation_Guide.md
-**Interview preparation**
-
-
----
 
 ##  How to Reproduce My Tests
 
@@ -305,35 +242,10 @@ npm test -- --coverage
 
 ### Highest Risk Areas
 
-| Risk | Likelihood | Impact | Severity | Mitigation |
-|------|------------|--------|----------|------------|
-| Timing logic fails | Medium | HIGH | **HIGH** | Extensive timeout testing, monitoring |
-| Biased random selection | Low | HIGH | **MEDIUM** | Statistical analysis over 100+ rounds |
-| Race conditions | Medium | Medium | **MEDIUM** | Concurrency testing, database locking |
-| SSO integration breaks | Low | HIGH | **MEDIUM** | Mock SSO for testing, error handling |
-| Data loss on restart | Low | HIGH | **MEDIUM** | Persistence testing, transactions |
-
----
-
-## Key Recommendations
-
 ### Before Production Release
 
 
-### Ongoing Quality Measures
-
-1. **Automated regression suite** running on every PR
-2. **Weekly fairness analysis** in production (monitor distribution)
-3. **User feedback loop** to catch usability issues
-4. **Performance monitoring** to catch degradation early
-5. **Quarterly security reviews**
 
 ---
 
-
-## Acknowledgments
-
-Thank you for the opportunity to demonstrate my QA skills through this assessment. I've approached this as a real-world challenge, balancing thoroughness with practical constraints.
-
-I'm excited to discuss this further during the interview and answer any questions about my approach, the challenges I considered, and how I would adapt this in your specific environment.
 
